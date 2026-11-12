@@ -1,0 +1,951 @@
+DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tyler, The Creator | Su historia como artista</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial;
+            background: #111;
+            color: #f5f5f5;
+            line-height: 1.5;
+        }
+
+
+        header {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+
+            background:
+                url("img/tyler-fondo.jpg");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+         .hero {
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            font-size: clamp(50px, 9vw, 110px);
+            letter-spacing: -5px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 21px;
+            color: #ddd;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+
+            color: white;
+            text-decoration: none;
+
+            border: 2px solid white;
+            border-radius: 30px;
+
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background: white;
+            color: black;
+        }
+
+        /* ---------- CONTENEDOR ---------- */
+
+        main {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section {
+            padding: 90px 0;
+        }
+
+        .titulo-seccion {
+            font-size: 42px;
+            margin-bottom: 30px;
+        }
+
+        .texto {
+            font-size: 18px;
+            color: #d4d4d4;
+        }
+
+        /* ---------- FOTO PRINCIPAL ---------- */
+
+        .foto-principal {
+            width: 100%;
+            max-width: 800px;
+            height: 600px;
+
+            object-fit: cover;
+
+            display: block;
+            margin: 40px auto;
+
+            border-radius: 20px;
+        }
+
+        /* ---------- ALBUMS ---------- */
+
+        .album {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 50px;
+
+            align-items: center;
+
+            padding: 70px 0;
+
+            border-top: 1px solid #333;
+        }
+
+        .album:nth-child(even) {
+            background: #151515;
+        }
+
+        .album-portada {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+
+            object-fit: cover;
+
+            border-radius: 12px;
+
+            box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+
+            transition: transform 0.3s;
+        }
+
+        .album-portada:hover {
+            transform: scale(1.03);
+        }
+
+        .album-info h2 {
+            font-size: 38px;
+            margin-bottom: 5px;
+        }
+
+        .album-fecha {
+            color: #aaa;
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+
+        .album-info p {
+            color: #d0d0d0;
+            margin-bottom: 18px;
+        }
+
+        .album-link {
+            display: inline-block;
+
+            padding: 10px 20px;
+
+            border: 1px solid white;
+            border-radius: 25px;
+
+            color: white;
+            text-decoration: none;
+
+            transition: 0.3s;
+        }
+
+        .album-link:hover {
+            background: white;
+            color: black;
+        }
+
+        /* ---------- INFLUENCIAS ---------- */
+
+        .influencias {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+
+            margin-top: 40px;
+        }
+
+        .influencia {
+            background: #1c1c1c;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .influencia h3 {
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .influencia p {
+            color: #bbb;
+        }
+
+        /* ---------- FOOTER ---------- */
+
+        footer {
+            text-align: center;
+            padding: 50px 20px;
+
+            background: #080808;
+            color: #888;
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+
+        @media (max-width: 800px) {
+
+            .album {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .album-portada {
+                max-width: 400px;
+                margin: auto;
+            }
+
+            .influencias {
+                grid-template-columns: 1fr;
+            }
+
+            .titulo-seccion {
+                font-size: 34px;
+            }
+
+            .texto {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================================
+         PORTADA
+    ========================================== -->
+
+    <header>
+
+        <div class="hero">
+
+            <h1>Tyler, The Creator</h1>
+
+            <p>
+                La evolucion de un artista que convirtio la experimentacion
+                en su propia identidad.
+            </p>
+
+            <a href="#biografia" class="boton">
+                Conocer su historia
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================================
+             BIOGRAFiA
+        ========================================== -->
+
+        <section id="biografia">
+
+            <h2 class="titulo-seccion">
+                Quien es Tyler, The Creator?
+            </h2>
+
+            <!-- FOTO DE TYLER -->
+            <img
+                src="img/tyler-biografia.jpg"
+                alt="Tyler, The Creator"
+                class="foto-principal"
+            >
+
+            <p class="texto">
+                Tyler Gregory Okonma, conocido mundialmente como
+                Tyler, The Creator, es uno de los artistas mas particulares
+                e influyentes del hip-hop contemporaneo. Nacido el 6 de marzo
+                de 1991 en Hawthorne, California, Tyler se convirtio con el
+                tiempo en mucho mas que un rapero: es productor, compositor,
+                director creativo y una figura con un control
+                artistico muy marcado sobre todo lo que crea.
+            </p>
+
+            <br>
+
+            <p class="texto">
+                Su carrera comenzo dentro de la escena alternativa de Los
+                angeles y evoluciono desde un sonido oscuro y provocador hacia
+                una musica mucho mas melodica, sofisticada y emocional.
+                Actualmente es reconocido por combinar hip-hop con soul,
+                jazz, funk, R&B y elementos experimentales.
+            </p>
+
+        </section>
+
+
+        <!-- =========================================
+             INICIOS
+        ========================================== -->
+
+        <section>
+
+            <h2 class="titulo-seccion">
+                Sus comienzos
+            </h2>
+
+            <!-- OTRA FOTO -->
+            <img
+                src="img/tyler-odd-future.jpg"
+                alt="Tyler The Creator y Odd Future"
+                class="foto-principal"
+            >
+
+            <p class="texto">
+                Antes de convertirse en una estrella internacional, Tyler
+                comenzo a producir musica por su cuenta y a experimentar con
+                distintos sonidos. En 2007 participo en la creacion de
+                Odd Future, colectivo que reunio a artistas como Earl
+                Sweatshirt, Frank Ocean, Syd y otros musicos de Los angeles.
+            </p>
+
+            <br>
+
+            <p class="texto">
+                Odd Future se caracterizo por su actitud independiente,
+                sus producciones poco convencionales y su rechazo a las reglas
+                tradicionales de la industria musical. Tyler no solamente
+                rapeaba: tambien producia y participaba en la
+                construccion visual del colectivo.
+            </p>
+
+        </section>
+
+
+        <!-- =========================================
+             INFLUENCIAS
+        ========================================== -->
+
+        <section>
+
+            <h2 class="titulo-seccion">
+                Sus influencias
+            </h2>
+
+            <div class="influencias">
+
+                <div class="influencia">
+
+                    <h3>Pharrell Williams</h3>
+
+                    <p>
+                        Una de las mayores influencias musicales de Tyler,
+                        especialmente por su produccion y utilizacion de
+                        melodias.
+                    </p>
+
+                </div>
+
+
+                <div class="influencia">
+
+                    <h3>Jazz y Soul</h3>
+
+                    <p>
+                        Generos que fueron adquiriendo cada vez mas importancia
+                        en sus producciones a medida que evolucionaba.
+                    </p>
+
+                </div>
+
+
+                <div class="influencia">
+
+                    <h3>Funk y R&B</h3>
+
+                    <p>
+                        Elementos fundamentales de su sonido moderno y de su
+                        manera de construir ambientes musicales.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             DISCOGRAFiA
+        ========================================== -->
+
+        <section id="discografia">
+
+            <h2 class="titulo-seccion">
+                Discografia
+            </h2>
+
+            <p class="texto">
+                La carrera musical de Tyler puede entenderse a traves de la
+                transformacion de cada uno de sus proyectos. Cada album
+                representa una etapa diferente de su vida y una nueva
+                exploracion musical.
+            </p>
+
+        </section>
+
+
+        <!-- =========================================
+             BASTARD
+        ========================================== -->
+
+        <article class="album">
+
+            <img
+                src="img/bastard.png"
+                alt="Portada de Bastard"
+                class="album-portada"
+            >
+
+            <div class="album-info">
+
+                <h2>Bastard</h2>
+
+                <div class="album-fecha">
+                    2009 . Mixtape
+                </div>
+
+                <p>
+                    <strong>Sonido:</strong>
+                    Hip-hop alternativo, horrorcore, sintetizadores oscuros
+                    y producciones minimalistas.
+                </p>
+
+                <p>
+                    <strong>Etapa personal:</strong>
+                    Representa los primeros anos de Tyler como artista,
+                    cuando todavia estaba desarrollando su identidad y
+                    experimentaba con una estetica provocadora.
+                </p>
+
+                <p>
+                    <strong>Impacto:</strong>
+                    Fue fundamental para presentar el estilo de Tyler y
+                    establecer las bases de lo que posteriormente seria
+                    su carrera.
+                </p>
+
+                <!-- CAMBIA EL LINK POR EL QUE QUIERAS -->
+                <a
+                    href="https://open.spotify.com/show/4GhtYqftuskLwyFCdPQPph"
+                    target="_blank"
+                    class="album-link"
+                >
+                    Escuchar album
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- =========================================
+             GOBLIN
+        ========================================== -->
+
+        <article class="album">
+
+            <img
+                src="img/goblin.jpg"
+                alt="Portada de Goblin"
+                class="album-portada"
+            >
+
+            <div class="album-info">
+
+                <h2>Goblin</h2>
+
+                <div class="album-fecha">
+                    2011
+                </div>
+
+                <p>
+                    <strong>Sonido:</strong>
+                    Hip-hop alternativo, sonidos industriales, jazz y
+                    producciones oscuras.
+                </p>
+
+                <p>
+                    <strong>Etapa personal:</strong>
+                    Tyler profundiza en conflictos internos y utiliza
+                    diferentes personajes y voces para construir una
+                    representacion de su mundo interior.
+                </p>
+
+                <p>
+                    <strong>Impacto:</strong>
+                    Fue el album que ayudo a convertir a Tyler en una
+                    figura conocida fuera del circuito underground.
+                </p>
+
+                <a
+                    href="https://open.spotify.com/intl-es/album/3CxknRPQLbOJRwQrNekNyU"
+                    target="_blank"
+                    class="album-link"
+                >
+                    Escuchar album
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- =========================================
+             WOLF
+        ========================================== -->
+
+        <article class="album">
+
+            <img
+                src="img/wolf.jpg"
+                alt="Portada de Wolf"
+                class="album-portada"
+            >
+
+            <div class="album-info">
+
+                <h2>Wolf</h2>
+
+                <div class="album-fecha">
+                    2013
+                </div>
+
+                <p>
+                    <strong>Sonido:</strong>
+                    Hip-hop, jazz, soul, funk, sintetizadores y melodias
+                    mas desarrolladas.
+                </p>
+
+                <p>
+                    <strong>Etapa personal:</strong>
+                    Tyler comienza a alejarse de la agresividad de sus
+                    primeros trabajos y desarrolla un universo narrativo
+                    mucho mas amplio.
+                </p>
+
+                <p>
+                    <strong>Impacto:</strong>
+                    Demostro que Tyler podia evolucionar musicalmente sin
+                    abandonar su identidad experimental.
+                </p>
+
+                <a
+                    href="https://open.spotify.com/intl-es/album/40QTqOBBxCEIQlLNdSjFQB"
+                    target="_blank"
+                    class="album-link"
+                >
+                    Escuchar album
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- =========================================
+             CHERRY BOMB
+        ========================================== -->
+
+        <article class="album">
+
+            <img
+                src="img/cherry-bomb.jpg"
+                alt="Portada de Cherry Bomb"
+                class="album-portada"
+            >
+
+            <div class="album-info">
+
+                <h2>Cherry Bomb</h2>
+
+                <div class="album-fecha">
+                    2015
+                </div>
+
+                <p>
+                    <strong>Sonido:</strong>
+                    Hip-hop, jazz, funk, soul, rock y electronica,
+                    utilizando sonidos distorsionados y estructuras
+                    poco convencionales.
+                </p>
+
+                <p>
+                    <strong>Etapa personal:</strong>
+                    Representa una etapa de experimentacion extrema,
+                    en la que Tyler buscaba romper con las expectativas
+                    que existian sobre su musica.
+                </p>
+
+                <p>
+                    <strong>Impacto:</strong>
+                    Funciono como puente entre su etapa mas agresiva y
+                    el sonido mucho mas melodico que apareceria despues.
+                </p>
+
+                <a
+                    href="https://open.spotify.com/intl-es/album/621OhgnZJ7Pz8iUazct1In"
+                    target="_blank"
+                    class="album-link"
+                >
+                    Escuchar album
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- =========================================
+             FLOWER BOY
+        ========================================== -->
+
+        <article class="album">
+
+            <img
+                src="img/flower-boy.jpg"
+                alt="Portada de Flower Boy"
+                class="album-portada"
+            >
+
+            <div class="album-info">
+
+                <h2>Flower Boy</h2>
+
+                <div class="album-fecha">
+                    2017
+                </div>
+
+                <p>
+                    <strong>Sonido:</strong>
+                    Soul, jazz, R&B, funk, hip-hop y pop, con producciones
+                    mucho mas calidas y melodicas.
+                </p>
+
+                <p>
+                    <strong>Etapa personal:</strong>
+                    Tyler muestra una faceta mucho mas vulnerable y habla
+                    sobre soledad, aislamiento, relaciones e identidad.
+                </p>
+
+                <p>
+                    <strong>Impacto:</strong>
+                    Fue uno de los momentos mas importantes de su
+                    transformacion artistica y recibio una nominacion
+                    al Grammy por Mejor album de Rap.
+                </p>
+
+                <a
+                    href="https://open.spotify.com/intl-es/album/2nkto6YNI4rUYTLqEwWJ3o"
+                    target="_blank"
+                    class="album-link"
+                >
+                    Escuchar album
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- =========================================
+             IGOR
+        ========================================== -->
+
+        <article class="album">
+
+            <img
+                src="img/igor.jpg"
+                alt="Portada de IGOR"
+                class="album-portada"
+            >
+
+            <div class="album-info">
+
+                <h2>IGOR</h2>
+
+                <div class="album-fecha">
+                    2019
+                </div>
+
+                <p>
+                    <strong>Sonido:</strong>
+                    Soul, funk, R&B, hip-hop experimental y sintetizadores,
+                    acompanados de voces modificadas.
+                </p>
+
+                <p>
+                    <strong>Etapa personal:</strong>
+                    El album explora el amor, los celos, la dependencia,
+                    la perdida y la aceptacion.
+                </p>
+
+                <p>
+                    <strong>Impacto:</strong>
+                    Se convirtio en uno de los trabajos mas reconocidos
+                    de Tyler y gano el Grammy a Mejor album de Rap.
+                </p>
+
+                <a
+                    href="https://open.spotify.com/intl-es/album/5zi7WsKlIiUXv09tbGLKsE"
+                    target="_blank"
+                    class="album-link"
+                >
+                    Escuchar album
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- =========================================
+             CALL ME IF YOU GET LOST
+        ========================================== -->
+
+        <article class="album">
+
+            <img
+                src="img/call-me-if-you-get-lost.jpg"
+                alt="Portada de Call Me If You Get Lost"
+                class="album-portada"
+            >
+
+            <div class="album-info">
+
+                <h2>CALL ME IF YOU GET LOST</h2>
+
+                <div class="album-fecha">
+                    2021
+                </div>
+
+                <p>
+                    <strong>Sonido:</strong>
+                    Hip-hop, jazz, soul y samples, recuperando una
+                    estetica mucho mas cercana al rap tradicional.
+                </p>
+
+                <p>
+                    <strong>Etapa personal:</strong>
+                    Tyler crea el personaje de Tyler Baudelaire y utiliza
+                    el lujo, los viajes y el exito como parte de la
+                    narrativa.
+                </p>
+
+                <p>
+                    <strong>Impacto:</strong>
+                    Gano el Grammy a Mejor album de Rap en 2022 y
+                    demostro que Tyler podia volver al rap tradicional
+                    despues de la experimentacion de IGOR.
+                </p>
+
+                <a
+                    href="https://open.spotify.com/intl-es/album/45ba6QAtNrdv6Ke4MFOKk9"
+                    target="_blank"
+                    class="album-link"
+                >
+                    Escuchar album
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- =========================================
+             CHROMAKOPIA
+        ========================================== -->
+
+        <article class="album">
+
+            <img
+                src="img/chromakopia.jpg"
+                alt="Portada de CHROMAKOPIA"
+                class="album-portada"
+            >
+
+            <div class="album-info">
+
+                <h2>CHROMAKOPIA</h2>
+
+                <div class="album-fecha">
+                    2024
+                </div>
+
+                <p>
+                    <strong>Sonido:</strong>
+                    Rap, soul, jazz, R&B, funk y produccion experimental.
+                </p>
+
+                <p>
+                    <strong>Etapa personal:</strong>
+                    Tyler reflexiona sobre el crecimiento, la identidad,
+                    las relaciones familiares, las expectativas y el
+                    paso del tiempo.
+                </p>
+
+                <p>
+                    <strong>Impacto:</strong>
+                    Representa una etapa mas madura de su carrera y
+                    continua mostrando su capacidad para combinar
+                    diferentes generos.
+                </p>
+
+                <a
+                    href="https://open.spotify.com/intl-es/album/0U28P0QVB1QRxpqp5IHOlH"
+                    target="_blank"
+                    class="album-link"
+                >
+                    Escuchar album
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- =========================================
+             DON'T TAP THE GLASS
+        ========================================== -->
+
+        <article class="album">
+
+            <img
+                src="img/dont-tap-the-glass.jpg"
+                alt="Portada de DON'T TAP THE GLASS"
+                class="album-portada"
+            >
+
+            <div class="album-info">
+
+                <h2>DON'T TAP THE GLASS</h2>
+
+                <div class="album-fecha">
+                    2025
+                </div>
+
+                <p>
+                    <strong>Sonido:</strong>
+                    Hip-hop, funk, R&B y produccion electronica,
+                    con un enfoque especialmente dinamico.
+                </p>
+
+                <p>
+                    <strong>Etapa personal:</strong>
+                    Despues de una etapa mas reflexiva, Tyler vuelve a
+                    enfocarse en la energia, el movimiento y la experiencia
+                    fisica de la musica.
+                </p>
+
+                <p>
+                    <strong>Impacto:</strong>
+                    Continua la evolucion de Tyler como productor y
+                    demuestra que sigue buscando nuevas formas de
+                    experimentar con su sonido.
+                </p>
+
+                <a
+                    href="https://open.spotify.com/intl-es/album/1jzv3jwZbt8lYfEtMjiD1R"
+                    target="_blank"
+                    class="album-link"
+                >
+                    Escuchar album
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- =========================================
+             CONCLUSION
+        ========================================== -->
+
+        <section>
+
+            <h2 class="titulo-seccion">
+                Una evolucion constante
+            </h2>
+
+            <p class="texto">
+                La carrera de Tyler, The Creator puede entenderse como una
+                sucesion de transformaciones. Desde el Tyler provocador de
+                Bastard y Goblin, pasando por la experimentacion de Wolf y
+                Cherry Bomb, hasta la vulnerabilidad de Flower Boy e IGOR,
+                cada proyecto representa una etapa diferente.
+            </p>
+
+            <br>
+
+            <p class="texto">
+                Su musica demuestra que un artista no necesita mantenerse
+                dentro de un unico genero. Tyler ha utilizado hip-hop, soul,
+                jazz, funk, R&B, rock y electronica para construir una
+                identidad propia. Su carrera se caracteriza principalmente
+                por una idea: evolucionar antes que repetirse.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         PIE DE PaGINA
+    ========================================== -->
+
+    <footer>
+
+        <p>
+            Tyler, The Creator. Evolucion artistica
+        </p>
+
+        <p>
+            Pagina realizada con HTML y CSS
+        </p>
+
+    </footer>
+
+</body>
+</html>
+```
